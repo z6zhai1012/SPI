@@ -13,8 +13,8 @@ Technical Requirements:
 2. User Interface Design:
 
         We also need user channels to control the SPI transmission, which include
-    start, end, data, to indicate the start, end, and data of packet we are sending,
-    data received and done signals for both sending and receiving.
+    start, data, to indicate the start and data of packet we are sending, data 
+    received and done signals for both sending and receiving.
 
 3. IO Ports:
 
@@ -24,7 +24,6 @@ Technical Requirements:
 
     User Ports:
         input               SPI_start;
-        input               SPI_end;
         input   [7:0]       data_send;
         output  [7:0]       data_receive;
         output              send_done;
