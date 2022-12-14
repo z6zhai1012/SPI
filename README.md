@@ -46,6 +46,7 @@ Technical Requirements:
             sent.
         (3) When bits_counter == 8, CS_n will be 1; transmission stop; done
             signals will be 1
+            
     b. Clock Speed:
         (1) The system clock is 4 times as fast as the spi clock for easier implementation
             and CPOL, CPHA selection
