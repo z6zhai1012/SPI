@@ -37,10 +37,15 @@ Technical Requirements:
 
 4. Behavior Analysis:
 
-    During Sending:
+    a. During Sending:
         (1) SPI_start will be 1 for one cycle; data_send will be available to
             store in registers
         (2) CS_n will be 0 during transmission; SCLK will start; Based on different
             CPOL and CPHA, data will be sent
-        (3) SPI_end will be 1 for one cycle; CS_n will be 1; transmission stop; done
+        (3) As transmission starts, a bits_counter will start counting number of bits
+            sent.
+        (3) When bits_counter == 8, CS_n will be 1; transmission stop; done
             signals will be 1
+    b. Clock Speed:
+        (1) The system clock is 4 times as fast as the spi clock for easier implementation
+            and CPOL, CPHA selection
