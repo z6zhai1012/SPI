@@ -4,7 +4,7 @@ Technical Requirements:
 
 1. Satisfy the SPI Protocol:
 
-        According to SPI Protocol, the transmission happens between one Master
+    According to SPI Protocol, the transmission happens between one Master
     and several Slaves. The data channels include MISO (Master Input Slave Output),
     MOSI (Master Output Slave Input), CS (Chip selection), SCLK (System Clock).
     Based on different Clock Polarity (CPOL) and Clock Phase (CPHA), we control the
@@ -12,7 +12,7 @@ Technical Requirements:
     
 2. User Interface Design:
 
-        We also need user channels to control the SPI transmission, which include
+    We also need user channels to control the SPI transmission, which include
     start, data, to indicate the start and data of packet we are sending, data 
     received and done signals for both sending and receiving.
 
